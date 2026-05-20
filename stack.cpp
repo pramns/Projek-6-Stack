@@ -29,6 +29,10 @@ void pop(){
         if (isEmpty()){
           cout << "stack is empty." << endl;
           return;
+           node *temp = top;
+           top = top->next;  
+           cout << "Popped value: " << temp->data << endl;
+           delete temp;  
         }
        
 }
@@ -61,7 +65,7 @@ int main(){
   int choice = 0;
   int value;
 
-    while (choice != 5)
+    while (choice != 4)
     {
         cout << "1. Push\n";
         cout << "2. Pop\n";
