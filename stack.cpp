@@ -20,7 +20,7 @@ int push(int value){
        node *newnode = new node();
         newnode -> data = value;
         newnode -> next = top;
-        top - newnode;
+        top = newnode;
         cout << "push value : "<< value << endl;
         return value; 
       }
