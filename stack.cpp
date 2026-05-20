@@ -49,7 +49,10 @@ void pop(){
             cout << endl;
         }
     }
-
+bool isEmpty()
+    {
+        return top == NULL; //return true is the top pointer is NULL, indicating an empty stack
+    }
 };
 
 
