@@ -16,7 +16,7 @@ class stack{
     stack(){
         top = NULL;
       }
-    int push(int value){
+int push(int value){
        node *newnode = new node();
         newnode -> data = value;
         newnode -> next = top;
@@ -25,7 +25,30 @@ class stack{
         return value; 
       }
 void pop(){
+  node *temp = top;
+        if (isEmpty()){
+          cout << "stack is empty." << endl;
+          return;
+        }
+       
 }
+ void peek()
+    {
+        if (isEmpty())
+        {
+            cout << "List is Empty." << endl;
+        }
+        else
+        {
+            node *current = top;
+            while (current != NULL)
+            {
+                cout << current->data << " " << endl;
+                current = current->next;
+            }
+            cout << endl;
+        }
+    }
 
 };
 
