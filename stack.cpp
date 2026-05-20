@@ -55,9 +55,7 @@ bool isEmpty()
     }
 };
 
-
-
-
 int main(){
+  stack stack;
     return 0;
 }
